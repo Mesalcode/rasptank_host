@@ -10,11 +10,7 @@ import time
 import pyglet
 recognizer = speech_recognition.Recognizer()
 def say(text):
-    try:
-        s = Sultan()
-        s.sudo("/home/pi/simple-google-tts/simple_google_tts  de \""+text+"\"").run()
-    except: 
-        print("TTS service is currently unavailable due to a non raspbian os or missing files.")
+    pass
 def listenForCall():
     with speech_recognition.Microphone() as source:
         print("Waiting for 'Ok Tank'")
